@@ -1,0 +1,414 @@
+[
+  {
+    "source_folder": "training",
+    "environment_overrides": {},
+    "metadata": {
+      "id": "sharifi76/indra-persian-ocr-finetune",
+      "title": "Indra Persian OCR Finetune",
+      "code_file": "run_training.py",
+      "language": "python",
+      "kernel_type": "script",
+      "is_private": true,
+      "enable_gpu": true,
+      "enable_internet": true,
+      "machine_shape": "NvidiaTeslaT4",
+      "dataset_sources": [],
+      "competition_sources": [],
+      "kernel_sources": [
+        "sharifi76/persian-ocr-corpus-preparation"
+      ]
+    }
+  },
+  {
+    "source_folder": "training_books",
+    "environment_overrides": {
+      "OCR_EPOCHS": "5",
+      "OCR_MAX_LR": "0.00005",
+      "OCR_FREEZE_BACKBONE": "1",
+      "OCR_CHECKPOINT_METRIC": "balanced_book",
+      "OCR_BOOK_LONG_LINES": "1"
+    },
+    "metadata": {
+      "id": "sharifi76/indra-persian-books-finetune",
+      "title": "Indra Persian Books Finetune",
+      "code_file": "run_training.py",
+      "language": "python",
+      "kernel_type": "script",
+      "is_private": true,
+      "enable_gpu": true,
+      "enable_internet": true,
+      "machine_shape": "NvidiaTeslaT4",
+      "dataset_sources": [],
+      "competition_sources": [],
+      "kernel_sources": [
+        "sharifi76/persian-ocr-book-line-preparation"
+      ]
+    }
+  },
+  {
+    "source_folder": "v4/kernel-render",
+    "environment_overrides": {},
+    "metadata": {
+      "id": "sharifi76/indra-persian-v4-render",
+      "title": "Indra Persian v4 Render",
+      "code_file": "run.py",
+      "language": "python",
+      "kernel_type": "script",
+      "is_private": true,
+      "enable_internet": true,
+      "enable_gpu": false,
+      "dataset_sources": [
+        "sharifi76/persian-ocr-large-mixed-v3",
+        "sharifi76/persian-free-fonts-ocr"
+      ],
+      "kernel_sources": [],
+      "competition_sources": [],
+      "model_sources": []
+    }
+  },
+  {
+    "source_folder": "v4/kernel-train",
+    "environment_overrides": {},
+    "metadata": {
+      "id": "sharifi76/indra-persian-v4-train",
+      "title": "Indra Persian v4 Train",
+      "code_file": "run.py",
+      "language": "python",
+      "kernel_type": "script",
+      "is_private": true,
+      "enable_internet": true,
+      "enable_gpu": true,
+      "dataset_sources": [
+        "sharifi76/persian-ocr-large-mixed-v3"
+      ],
+      "kernel_sources": [
+        "sharifi76/indra-persian-v4-render"
+      ],
+      "competition_sources": [],
+      "model_sources": [],
+      "machine_shape": "NvidiaTeslaT4"
+    }
+  },
+  {
+    "source_folder": "v4/kernel-train-v5",
+    "environment_overrides": {
+      "RUN": "v5"
+    },
+    "metadata": {
+      "id": "sharifi76/indra-persian-v5-train",
+      "title": "Indra Persian v5 Train",
+      "code_file": "run.py",
+      "language": "python",
+      "kernel_type": "script",
+      "is_private": true,
+      "enable_internet": true,
+      "enable_gpu": true,
+      "dataset_sources": [
+        "sharifi76/persian-ocr-large-mixed-v3"
+      ],
+      "kernel_sources": [
+        "sharifi76/indra-persian-v4-render"
+      ],
+      "competition_sources": [],
+      "model_sources": [],
+      "machine_shape": "NvidiaTeslaT4"
+    }
+  },
+  {
+    "source_folder": "receipts/kernel-render",
+    "environment_overrides": {},
+    "metadata": {
+      "id": "sharifi76/indra-persian-receipts-render",
+      "title": "Indra Persian Receipts Render",
+      "code_file": "run.py",
+      "language": "python",
+      "kernel_type": "script",
+      "is_private": true,
+      "enable_internet": true,
+      "enable_gpu": false,
+      "dataset_sources": [
+        "sharifi76/persian-ocr-large-mixed-v3",
+        "sharifi76/persian-free-fonts-ocr",
+        "sharifi76/persian-receipt-fonts-ocr"
+      ],
+      "kernel_sources": [],
+      "competition_sources": [],
+      "model_sources": []
+    }
+  },
+  {
+    "source_folder": "receipts/kernel-render2",
+    "environment_overrides": {},
+    "metadata": {
+      "id": "sharifi76/indra-persian-receipts2-render",
+      "title": "Indra Persian Receipts2 Render",
+      "code_file": "run.py",
+      "language": "python",
+      "kernel_type": "script",
+      "is_private": true,
+      "enable_internet": true,
+      "enable_gpu": false,
+      "dataset_sources": [
+        "sharifi76/persian-ocr-large-mixed-v3",
+        "sharifi76/persian-free-fonts-ocr",
+        "sharifi76/persian-receipt-fonts-ocr",
+        "sharifi76/persian-receipt-fonts-384"
+      ],
+      "kernel_sources": [],
+      "competition_sources": [],
+      "model_sources": []
+    }
+  },
+  {
+    "source_folder": "receipts/kernel-train",
+    "environment_overrides": {},
+    "metadata": {
+      "id": "sharifi76/indra-persian-receipts-train",
+      "title": "Indra Persian Receipts Train",
+      "code_file": "run.py",
+      "language": "python",
+      "kernel_type": "script",
+      "is_private": true,
+      "enable_internet": true,
+      "enable_gpu": true,
+      "dataset_sources": [
+        "sharifi76/persian-ocr-large-mixed-v3"
+      ],
+      "kernel_sources": [
+        "sharifi76/indra-persian-v4-render",
+        "sharifi76/indra-persian-v5-train",
+        "sharifi76/indra-persian-receipts-render"
+      ],
+      "competition_sources": [],
+      "model_sources": [],
+      "machine_shape": "NvidiaTeslaT4"
+    }
+  },
+  {
+    "source_folder": "receipts/kernel-train2",
+    "environment_overrides": {},
+    "metadata": {
+      "id": "sharifi76/indra-persian-receipts2-train",
+      "title": "Indra Persian Receipts2 Train",
+      "code_file": "run.py",
+      "language": "python",
+      "kernel_type": "script",
+      "is_private": true,
+      "enable_internet": true,
+      "enable_gpu": true,
+      "dataset_sources": [
+        "sharifi76/persian-ocr-large-mixed-v3",
+        "sharifi76/persian-receipt-real-lines"
+      ],
+      "kernel_sources": [
+        "sharifi76/indra-persian-v4-render",
+        "sharifi76/indra-persian-v5-train",
+        "sharifi76/indra-persian-receipts2-render"
+      ],
+      "competition_sources": [],
+      "model_sources": [],
+      "machine_shape": "NvidiaTeslaT4"
+    }
+  },
+  {
+    "source_folder": "receipts/kernel-train3",
+    "environment_overrides": {
+      "RUN": "3"
+    },
+    "metadata": {
+      "id": "sharifi76/indra-persian-receipts3-train",
+      "title": "Indra Persian Receipts3 Train",
+      "code_file": "run.py",
+      "language": "python",
+      "kernel_type": "script",
+      "is_private": true,
+      "enable_internet": true,
+      "enable_gpu": true,
+      "dataset_sources": [
+        "sharifi76/persian-ocr-large-mixed-v3",
+        "sharifi76/persian-receipt-real-lines"
+      ],
+      "kernel_sources": [
+        "sharifi76/indra-persian-v4-render",
+        "sharifi76/indra-persian-receipts2-train",
+        "sharifi76/indra-persian-receipts2-render"
+      ],
+      "competition_sources": [],
+      "model_sources": [],
+      "machine_shape": "NvidiaTeslaT4"
+    }
+  },
+  {
+    "source_folder": "receipts/kernel-train4",
+    "environment_overrides": {
+      "RUN": "4"
+    },
+    "metadata": {
+      "id": "sharifi76/indra-persian-receipts4-train",
+      "title": "Indra Persian Receipts4 Train",
+      "code_file": "run.py",
+      "language": "python",
+      "kernel_type": "script",
+      "is_private": true,
+      "enable_internet": true,
+      "enable_gpu": true,
+      "dataset_sources": [
+        "sharifi76/persian-ocr-large-mixed-v3",
+        "sharifi76/persian-receipt-real-lines"
+      ],
+      "kernel_sources": [
+        "sharifi76/indra-persian-v4-render",
+        "sharifi76/indra-persian-receipts3-train",
+        "sharifi76/indra-persian-receipts2-render",
+        "sharifi76/indra-persian-ids-prepare"
+      ],
+      "competition_sources": [],
+      "model_sources": [],
+      "machine_shape": "NvidiaTeslaT4"
+    }
+  },
+  {
+    "source_folder": "receipts/kernel-train5",
+    "environment_overrides": {
+      "RUN": "5"
+    },
+    "metadata": {
+      "id": "sharifi76/indra-persian-receipts5-train",
+      "title": "Indra Persian Receipts5 Train",
+      "code_file": "run.py",
+      "language": "python",
+      "kernel_type": "script",
+      "is_private": true,
+      "enable_internet": true,
+      "enable_gpu": true,
+      "dataset_sources": [
+        "sharifi76/persian-ocr-large-mixed-v3"
+      ],
+      "kernel_sources": [
+        "sharifi76/indra-persian-v4-render",
+        "sharifi76/indra-persian-receipts3-train",
+        "sharifi76/indra-persian-receipts2-render",
+        "sharifi76/indra-persian-ids-prepare"
+      ],
+      "competition_sources": [],
+      "model_sources": [],
+      "machine_shape": "NvidiaTeslaT4"
+    }
+  },
+  {
+    "source_folder": "receipts/kernel-train6",
+    "environment_overrides": {
+      "RUN": "6"
+    },
+    "metadata": {
+      "id": "sharifi76/indra-persian-receipts6-train",
+      "title": "Indra Persian Receipts6 Train",
+      "code_file": "run.py",
+      "language": "python",
+      "kernel_type": "script",
+      "is_private": true,
+      "enable_internet": true,
+      "enable_gpu": true,
+      "dataset_sources": [
+        "sharifi76/persian-ocr-large-mixed-v3",
+        "sharifi76/persian-receipt-real-lines"
+      ],
+      "kernel_sources": [
+        "sharifi76/indra-persian-v4-render",
+        "sharifi76/indra-persian-receipts3-train",
+        "sharifi76/indra-persian-receipts2-render",
+        "sharifi76/indra-persian-ids-prepare"
+      ],
+      "competition_sources": [],
+      "model_sources": [],
+      "machine_shape": "NvidiaTeslaT4"
+    }
+  },
+  {
+    "source_folder": "receipts/det/kernel-render",
+    "environment_overrides": {},
+    "metadata": {
+      "id": "sharifi76/indra-persian-det-render",
+      "title": "Indra Persian Det Render",
+      "code_file": "run.py",
+      "language": "python",
+      "kernel_type": "script",
+      "is_private": true,
+      "enable_internet": true,
+      "enable_gpu": false,
+      "dataset_sources": [
+        "sharifi76/persian-free-fonts-ocr",
+        "sharifi76/persian-receipt-fonts-ocr",
+        "sharifi76/persian-receipt-fonts-384"
+      ],
+      "kernel_sources": [],
+      "competition_sources": [],
+      "model_sources": []
+    }
+  },
+  {
+    "source_folder": "receipts/det/kernel-train",
+    "environment_overrides": {},
+    "metadata": {
+      "id": "sharifi76/indra-persian-det-train",
+      "title": "Indra Persian Det Train",
+      "code_file": "run.py",
+      "language": "python",
+      "kernel_type": "script",
+      "is_private": true,
+      "enable_internet": true,
+      "enable_gpu": true,
+      "dataset_sources": [
+        "sharifi76/persian-receipt-real-pages"
+      ],
+      "kernel_sources": [
+        "sharifi76/indra-persian-det-render"
+      ],
+      "competition_sources": [],
+      "model_sources": [],
+      "machine_shape": "NvidiaTeslaT4"
+    }
+  },
+  {
+    "source_folder": "receipts/ids/kernel-card",
+    "environment_overrides": {},
+    "metadata": {
+      "id": "sharifi76/indra-persian-ids-card",
+      "title": "Indra Persian IDs Card",
+      "code_file": "run.py",
+      "language": "python",
+      "kernel_type": "script",
+      "is_private": true,
+      "enable_internet": true,
+      "enable_gpu": true,
+      "dataset_sources": [],
+      "kernel_sources": [],
+      "competition_sources": [],
+      "model_sources": [],
+      "machine_shape": "NvidiaTeslaT4"
+    }
+  },
+  {
+    "source_folder": "receipts/ids/kernel-prepare",
+    "environment_overrides": {},
+    "metadata": {
+      "id": "sharifi76/indra-persian-ids-prepare",
+      "title": "Indra Persian IDs Prepare",
+      "code_file": "run.py",
+      "language": "python",
+      "kernel_type": "script",
+      "is_private": true,
+      "enable_internet": true,
+      "enable_gpu": false,
+      "dataset_sources": [
+        "sharifi76/persian-ocr-large-mixed-v3",
+        "sharifi76/persian-free-fonts-ocr",
+        "sharifi76/persian-receipt-fonts-ocr",
+        "sharifi76/persian-receipt-fonts-384"
+      ],
+      "kernel_sources": [],
+      "competition_sources": [],
+      "model_sources": []
+    }
+  }
+]

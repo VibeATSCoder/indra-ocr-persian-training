@@ -1,0 +1,404 @@
+{
+  "source_file": "v5/results/results.json",
+  "recorded_results": {
+    "selected": "fast-loose",
+    "selection_scores": {
+      "fast-loose": 0.009420611698714741,
+      "loose": 0.009735697880962697,
+      "fast": 0.010629036835005287,
+      "adapt": 0.010774929933514431,
+      "original": 0.019836285923933165
+    },
+    "candidates": [
+      {
+        "name": "loose",
+        "best": 0.009735697880962697,
+        "steps": 29065,
+        "seen": 5537280,
+        "sec_per_step": 0.1552615239591605
+      },
+      {
+        "name": "adapt",
+        "best": 0.010774929933514431,
+        "steps": 28896,
+        "seen": 5504832,
+        "sec_per_step": 0.15606270891590532
+      },
+      {
+        "name": "fast-loose",
+        "best": 0.009420611698714741,
+        "steps": 29180,
+        "seen": 5559360,
+        "sec_per_step": 0.15469389304150102
+      },
+      {
+        "name": "fast",
+        "best": 0.010629036835005287,
+        "steps": 28907,
+        "seen": 5506944,
+        "sec_per_step": 0.156024521318435
+      }
+    ],
+    "configs": [
+      {
+        "name": "adapt",
+        "lr": 3e-05,
+        "anchor": 0.001,
+        "distill": 0.15
+      },
+      {
+        "name": "loose",
+        "lr": 3e-05,
+        "anchor": 0.0002,
+        "distill": 0.05
+      },
+      {
+        "name": "fast",
+        "lr": 8e-05,
+        "anchor": 0.001,
+        "distill": 0.15
+      },
+      {
+        "name": "fast-loose",
+        "lr": 8e-05,
+        "anchor": 0.0002,
+        "distill": 0.05
+      }
+    ],
+    "mass": {
+      "real": 0.15,
+      "font": 0.12,
+      "bookfont": 0.25,
+      "arshasb": 0.12,
+      "persian230k": 0.14,
+      "garshasp": 0.22
+    },
+    "weights": {
+      "real": 0.35,
+      "bookfont": 0.3,
+      "font": 0.25,
+      "garshasp": 0.04,
+      "arshasb": 0.03,
+      "persian230k": 0.03
+    },
+    "counts": {
+      "train": {
+        "real": 3435,
+        "garshasp": 339516,
+        "persian230k": 144219,
+        "arshasb": 111745,
+        "font": 39951,
+        "bookfont": 125992
+      },
+      "test": {
+        "real": 417,
+        "garshasp": 7095,
+        "persian230k": 81779,
+        "arshasb": 2820,
+        "font": 3000,
+        "bookfont": 4499
+      },
+      "validation": {
+        "real": 368,
+        "garshasp": 7166,
+        "persian230k": 2995,
+        "arshasb": 2421,
+        "font": 1498,
+        "bookfont": 2500
+      }
+    },
+    "train_seconds_per_candidate": 4500.0,
+    "pretrained_parity": {
+      "max_logit_difference": 4.1961669921875e-05,
+      "ids_identical": true,
+      "lengths_identical": true
+    },
+    "run": "v5",
+    "model_revision": "bd02167fdf2005a19962cc15188f8496a2c87d3b",
+    "baseline_validation": {
+      "all": {
+        "char_edits": 84534,
+        "chars": 1003964,
+        "word_edits": 39132,
+        "words": 199623,
+        "canonical_edits": 67494,
+        "canonical_chars": 814415,
+        "samples": 16948,
+        "exact": 7787,
+        "cer": 0.08420023028714177,
+        "wer": 0.1960295156369757,
+        "canonical_cer": 0.082874210322747
+      },
+      "real": {
+        "char_edits": 658,
+        "chars": 27473,
+        "word_edits": 526,
+        "words": 5025,
+        "canonical_edits": 342,
+        "canonical_chars": 22588,
+        "samples": 368,
+        "exact": 154,
+        "cer": 0.0239507880464456,
+        "wer": 0.10467661691542289,
+        "canonical_cer": 0.01514078271648663
+      },
+      "persian230k": {
+        "char_edits": 2727,
+        "chars": 132337,
+        "word_edits": 1865,
+        "words": 27687,
+        "canonical_edits": 2083,
+        "canonical_chars": 107415,
+        "samples": 2995,
+        "exact": 2155,
+        "cer": 0.020606481936268767,
+        "wer": 0.06736013291436414,
+        "canonical_cer": 0.019392077456593586
+      },
+      "garshasp": {
+        "char_edits": 76040,
+        "chars": 478404,
+        "word_edits": 32632,
+        "words": 94176,
+        "canonical_edits": 62694,
+        "canonical_chars": 387341,
+        "samples": 7166,
+        "exact": 1615,
+        "cer": 0.15894515932141035,
+        "wer": 0.3465001698946653,
+        "canonical_cer": 0.161857381480401
+      },
+      "arshasb": {
+        "char_edits": 2374,
+        "chars": 131496,
+        "word_edits": 1821,
+        "words": 25580,
+        "canonical_edits": 1030,
+        "canonical_chars": 107242,
+        "samples": 2421,
+        "exact": 1219,
+        "cer": 0.018053781103607714,
+        "wer": 0.07118842845973417,
+        "canonical_cer": 0.009604446019283489
+      },
+      "bookfont": {
+        "char_edits": 2432,
+        "chars": 162152,
+        "word_edits": 2071,
+        "words": 32137,
+        "canonical_edits": 1167,
+        "canonical_chars": 131344,
+        "samples": 2500,
+        "exact": 1304,
+        "cer": 0.014998273225122108,
+        "wer": 0.06444285403117901,
+        "canonical_cer": 0.008885065172371786
+      },
+      "bookfont/nahid": {
+        "char_edits": 2432,
+        "chars": 162152,
+        "word_edits": 2071,
+        "words": 32137,
+        "canonical_edits": 1167,
+        "canonical_chars": 131344,
+        "samples": 2500,
+        "exact": 1304,
+        "cer": 0.014998273225122108,
+        "wer": 0.06444285403117901,
+        "canonical_cer": 0.008885065172371786
+      },
+      "font": {
+        "char_edits": 303,
+        "chars": 72102,
+        "word_edits": 217,
+        "words": 15018,
+        "canonical_edits": 178,
+        "canonical_chars": 58485,
+        "samples": 1498,
+        "exact": 1340,
+        "cer": 0.004202379961720896,
+        "wer": 0.01444932747369823,
+        "canonical_cer": 0.003043515431307173
+      },
+      "font/notonaskharabic": {
+        "char_edits": 303,
+        "chars": 72102,
+        "word_edits": 217,
+        "words": 15018,
+        "canonical_edits": 178,
+        "canonical_chars": 58485,
+        "samples": 1498,
+        "exact": 1340,
+        "cer": 0.004202379961720896,
+        "wer": 0.01444932747369823,
+        "canonical_cer": 0.003043515431307173
+      }
+    },
+    "baseline_test": {
+      "all": {
+        "char_edits": 155297,
+        "chars": 4502409,
+        "word_edits": 88894,
+        "words": 937916,
+        "canonical_edits": 119814,
+        "canonical_chars": 3649237,
+        "samples": 99610,
+        "exact": 66463,
+        "cer": 0.034491979737958055,
+        "wer": 0.09477821041543166,
+        "canonical_cer": 0.03283261679085244
+      },
+      "persian230k": {
+        "char_edits": 72327,
+        "chars": 3434261,
+        "word_edits": 49624,
+        "words": 724113,
+        "canonical_edits": 53419,
+        "canonical_chars": 2783514,
+        "samples": 81779,
+        "exact": 58069,
+        "cer": 0.021060426100404133,
+        "wer": 0.06853074036787075,
+        "canonical_cer": 0.01919120938497166
+      },
+      "real": {
+        "char_edits": 437,
+        "chars": 29126,
+        "word_edits": 409,
+        "words": 5403,
+        "canonical_edits": 169,
+        "canonical_chars": 23908,
+        "samples": 417,
+        "exact": 192,
+        "cer": 0.015003776694362425,
+        "wer": 0.07569868591523228,
+        "canonical_cer": 0.007068763593776142
+      },
+      "garshasp": {
+        "char_edits": 74852,
+        "chars": 474194,
+        "word_edits": 32763,
+        "words": 93343,
+        "canonical_edits": 61514,
+        "canonical_chars": 384070,
+        "samples": 7095,
+        "exact": 1555,
+        "cer": 0.15785100612829348,
+        "wer": 0.3509957897217788,
+        "canonical_cer": 0.16016351185981723
+      },
+      "arshasb": {
+        "char_edits": 2681,
+        "chars": 153644,
+        "word_edits": 2072,
+        "words": 29948,
+        "canonical_edits": 1147,
+        "canonical_chars": 125313,
+        "samples": 2820,
+        "exact": 1400,
+        "cer": 0.017449428549113535,
+        "wer": 0.06918659008948845,
+        "canonical_cer": 0.00915308068596235
+      },
+      "bookfont": {
+        "char_edits": 3941,
+        "chars": 267612,
+        "word_edits": 3171,
+        "words": 55083,
+        "canonical_edits": 2900,
+        "canonical_chars": 216152,
+        "samples": 4499,
+        "exact": 2829,
+        "cer": 0.01472654440010164,
+        "wer": 0.05756767060617613,
+        "canonical_cer": 0.013416484695954698
+      },
+      "bookfont/nazlib": {
+        "char_edits": 964,
+        "chars": 89880,
+        "word_edits": 838,
+        "words": 18479,
+        "canonical_edits": 591,
+        "canonical_chars": 72579,
+        "samples": 1500,
+        "exact": 1012,
+        "cer": 0.010725411659991099,
+        "wer": 0.04534877428432275,
+        "canonical_cer": 0.008142851237961393
+      },
+      "bookfont/nazli": {
+        "char_edits": 2977,
+        "chars": 177732,
+        "word_edits": 2333,
+        "words": 36604,
+        "canonical_edits": 2309,
+        "canonical_chars": 143573,
+        "samples": 2999,
+        "exact": 1817,
+        "cer": 0.016749938109063084,
+        "wer": 0.0637362036935854,
+        "canonical_cer": 0.016082411038287142
+      },
+      "font": {
+        "char_edits": 1059,
+        "chars": 143572,
+        "word_edits": 855,
+        "words": 30026,
+        "canonical_edits": 665,
+        "canonical_chars": 116280,
+        "samples": 3000,
+        "exact": 2418,
+        "cer": 0.007376090045412754,
+        "wer": 0.028475321388130286,
+        "canonical_cer": 0.005718954248366013
+      },
+      "font/amiri": {
+        "char_edits": 668,
+        "chars": 71786,
+        "word_edits": 549,
+        "words": 15013,
+        "canonical_edits": 451,
+        "canonical_chars": 58140,
+        "samples": 1500,
+        "exact": 1134,
+        "cer": 0.009305435600256318,
+        "wer": 0.03656830746686205,
+        "canonical_cer": 0.007757137942896457
+      },
+      "font/scheherazadenew": {
+        "char_edits": 391,
+        "chars": 71786,
+        "word_edits": 306,
+        "words": 15013,
+        "canonical_edits": 214,
+        "canonical_chars": 58140,
+        "samples": 1500,
+        "exact": 1284,
+        "cer": 0.005446744490569192,
+        "wer": 0.020382335309398522,
+        "canonical_cer": 0.0036807705538355693
+      }
+    },
+    "export_parity_fast-loose": {
+      "max_logit_difference": 4.9591064453125e-05,
+      "ids_identical": true,
+      "lengths_identical": true
+    },
+    "export_parity_loose": {
+      "max_logit_difference": 4.9591064453125e-05,
+      "ids_identical": true,
+      "lengths_identical": true
+    },
+    "export_parity_fast": {
+      "max_logit_difference": 4.1961669921875e-05,
+      "ids_identical": true,
+      "lengths_identical": true
+    },
+    "export_parity_adapt": {
+      "max_logit_difference": 4.1961669921875e-05,
+      "ids_identical": true,
+      "lengths_identical": true
+    },
+    "notes": "Test opened only after validation selection. Real-domain labels are machine-generated (filtered), not human ground truth."
+  }
+}

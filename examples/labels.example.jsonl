@@ -1,0 +1,3 @@
+{"image":"images/book-a-line-01.png","text":"متن واقعی همان خط را اینجا بنویسید","document_id":"book-a","split":"train","domain":"custom"}
+{"image":"images/book-b-page-02.png","bbox":[40,110,710,160],"text":"برچسب فقط برای همین کادر است","document_id":"book-b","split":"validation","domain":"custom"}
+{"image":"images/book-c-line-03.png","text":"این کتاب در آموزش استفاده نمی‌شود","document_id":"book-c","split":"test","domain":"custom"}

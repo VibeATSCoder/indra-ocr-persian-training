@@ -1,0 +1,12 @@
+kaggle==2.2.5
+six==1.17.0
+numpy>=1.26
+onnx>=1.16
+onnxruntime>=1.18
+pyarrow>=18
+Pillow>=10
+opencv-python-headless>=4.10
+rapidfuzz>=3.10
+huggingface_hub>=0.27
+pypdfium2>=4.30
+requests>=2.32

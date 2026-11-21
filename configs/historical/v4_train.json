@@ -1,0 +1,86 @@
+{
+  "source_file": "v4/train.py",
+  "parameters": {
+    "SEED": 20261104,
+    "BATCH": {
+      "expression": "16 if DRY else 192"
+    },
+    "EVAL_EVERY": {
+      "expression": "30 if DRY else 1100"
+    },
+    "MODEL_REV": "bd02167fdf2005a19962cc15188f8496a2c87d3b",
+    "MASS": {
+      "real": 0.15,
+      "font": 0.12,
+      "bookfont": 0.25,
+      "arshasb": 0.12,
+      "persian230k": 0.14,
+      "garshasp": 0.22
+    },
+    "WEIGHTS": {
+      "real": 0.35,
+      "bookfont": 0.3,
+      "font": 0.25,
+      "garshasp": 0.04,
+      "arshasb": 0.03,
+      "persian230k": 0.03
+    },
+    "RUN": {
+      "expression": "os.environ.get('RUN', 'v4')"
+    },
+    "RUNS": {
+      "v4": [
+        4200,
+        [
+          {
+            "name": "adapt",
+            "lr": 3e-05,
+            "anchor": 0.001,
+            "distill": 0.15
+          },
+          {
+            "name": "conservative",
+            "lr": 1e-05,
+            "anchor": 0.003,
+            "distill": 0.3
+          }
+        ]
+      ],
+      "v5": [
+        4500,
+        [
+          {
+            "name": "adapt",
+            "lr": 3e-05,
+            "anchor": 0.001,
+            "distill": 0.15
+          },
+          {
+            "name": "loose",
+            "lr": 3e-05,
+            "anchor": 0.0002,
+            "distill": 0.05
+          },
+          {
+            "name": "fast",
+            "lr": 8e-05,
+            "anchor": 0.001,
+            "distill": 0.15
+          },
+          {
+            "name": "fast-loose",
+            "lr": 8e-05,
+            "anchor": 0.0002,
+            "distill": 0.05
+          }
+        ]
+      ]
+    },
+    "TRAIN_SECONDS": {
+      "expression": "float(os.environ.get('TRAIN_SECONDS', 60 if DRY else RUNS[RUN][0]))"
+    },
+    "CONFIGS": {
+      "expression": "RUNS[RUN][1]"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "base_model_dir": "../models/base",
+  "dataset_dir": "../data/demo-prepared",
+  "output_dir": "../runs/smoke",
+  "device": "cpu",
+  "seed": 20261104,
+  "batch_size": 2,
+  "max_steps": 2,
+  "max_epochs": 3,
+  "train_seconds": 90,
+  "eval_every_steps": 1,
+  "num_workers": 0,
+  "augmentation": false,
+  "candidates": [
+    {"name": "smoke", "learning_rate": 0.00008, "anchor_weight": 0.0002, "distillation_weight": 0.05}
+  ]
+}

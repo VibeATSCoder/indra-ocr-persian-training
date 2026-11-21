@@ -1,0 +1,38 @@
+{
+  "seed": 20261102,
+  "target": "modern printed Persian books and PDFs",
+  "initialize": "original pinned Indra RTL recognizer",
+  "candidate_lrs": [
+    2e-05,
+    5e-06
+  ],
+  "epochs_per_candidate": 3,
+  "samples_per_epoch_max": 600000,
+  "regularization": [
+    "original-model conditional KL at temperature 2",
+    "L2 anchoring to original weights",
+    "frozen BatchNorm statistics"
+  ],
+  "selection": "validation-only weighted font and real-document error; original control eligible",
+  "new_test": "source-document holdout pseudo labels plus known-text held-out font subset; only evaluated after selection",
+  "external_development": "same 100 reference pages, 13 modern subset; never used for gradient updates",
+  "limits": "Worker cap 5000 seconds per trial; GPU weekly quota checked before launch",
+  "caveats": [
+    "real document labels are automated and filtered",
+    "global font novelty cannot be established for corpora without font IDs"
+  ],
+  "execution_trials": [
+    {
+      "kernel": "indra-persian-large-train",
+      "batch": 128,
+      "candidate_loop_seconds": 2700
+    },
+    {
+      "kernel": "indra-persian-large-train-fast",
+      "batch": 256,
+      "candidate_loop_seconds": 3600
+    }
+  ],
+  "execution_optimization": "Replica-local CTC and KL sums; numerical loss/gradient equivalence verified on actual CPU and two-T4 crops. No change to objectives",
+  "final_selection": "Compare completed trial validation scores; persist decision before reading test metrics. Test accuracy is not used to choose trial or checkpoint."
+}

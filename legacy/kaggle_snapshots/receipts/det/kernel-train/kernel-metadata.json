@@ -1,0 +1,19 @@
+{
+  "id": "sharifi76/indra-persian-det-train",
+  "title": "Indra Persian Det Train",
+  "code_file": "run.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_internet": true,
+  "enable_gpu": true,
+  "dataset_sources": [
+    "sharifi76/persian-receipt-real-pages"
+  ],
+  "kernel_sources": [
+    "sharifi76/indra-persian-det-render"
+  ],
+  "competition_sources": [],
+  "model_sources": [],
+  "machine_shape": "NvidiaTeslaT4"
+}

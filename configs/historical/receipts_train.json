@@ -1,0 +1,219 @@
+{
+  "source_file": "receipts/train.py",
+  "parameters": {
+    "SEED": 20261116,
+    "BATCH": {
+      "expression": "16 if DRY else 192"
+    },
+    "EVAL_EVERY": {
+      "expression": "30 if DRY else 750"
+    },
+    "MODEL_REV": "bd02167fdf2005a19962cc15188f8496a2c87d3b",
+    "RUN": {
+      "expression": "os.environ.get('RUN', '2')"
+    },
+    "RUNS": {
+      "2": {
+        "start": "fast-loose",
+        "mass": {
+          "receipt_real": 0.15,
+          "receipt_noisy": 0.13,
+          "receipt": 0.32,
+          "real": 0.06,
+          "font": 0.04,
+          "bookfont": 0.09,
+          "arshasb": 0.07,
+          "persian230k": 0.06,
+          "garshasp": 0.08
+        },
+        "weights": {
+          "receipt_real": 0.32,
+          "receipt_noisy": 0.2,
+          "receipt": 0.22,
+          "real": 0.09,
+          "bookfont": 0.06,
+          "font": 0.06,
+          "garshasp": 0.02,
+          "arshasb": 0.015,
+          "persian230k": 0.015
+        },
+        "lowq": 0,
+        "configs": null
+      },
+      "3": {
+        "start": "model-bold",
+        "mass": {
+          "receipt_noisy": 0.26,
+          "receipt_real": 0.1,
+          "receipt": 0.28,
+          "real": 0.06,
+          "font": 0.04,
+          "bookfont": 0.08,
+          "arshasb": 0.05,
+          "persian230k": 0.05,
+          "garshasp": 0.08
+        },
+        "weights": {
+          "receipt_noisy": 0.36,
+          "receipt_real": 0.24,
+          "receipt": 0.2,
+          "real": 0.07,
+          "bookfont": 0.05,
+          "font": 0.05,
+          "garshasp": 0.01,
+          "arshasb": 0.01,
+          "persian230k": 0.01
+        },
+        "lowq": 0.25,
+        "configs": [
+          {
+            "name": "steady",
+            "lr": 5e-05,
+            "anchor": 5e-05,
+            "distill": 0.02
+          },
+          {
+            "name": "gentle",
+            "lr": 2e-05,
+            "anchor": 5e-05,
+            "distill": 0.02
+          }
+        ]
+      },
+      "4": {
+        "start": "model-steady",
+        "seconds": 3600,
+        "mass": {
+          "id_midv_noisy": 0.24,
+          "id_midv": 0.14,
+          "id_synth": 0.1,
+          "receipt_noisy": 0.14,
+          "receipt_real": 0.08,
+          "receipt": 0.12,
+          "real": 0.03,
+          "font": 0.02,
+          "bookfont": 0.05,
+          "arshasb": 0.02,
+          "persian230k": 0.02,
+          "garshasp": 0.04
+        },
+        "weights": {
+          "id_midv_noisy": 0.28,
+          "id_midv": 0.17,
+          "id_synth": 0.05,
+          "receipt_noisy": 0.2,
+          "receipt_real": 0.15,
+          "receipt": 0.08,
+          "real": 0.03,
+          "bookfont": 0.02,
+          "font": 0.02
+        },
+        "lowq": 0.25,
+        "configs": [
+          {
+            "name": "steady",
+            "lr": 5e-05,
+            "anchor": 5e-05,
+            "distill": 0.02
+          },
+          {
+            "name": "bold",
+            "lr": 0.0001,
+            "anchor": 2e-05,
+            "distill": 0.01
+          }
+        ]
+      },
+      "6": {
+        "start": "model-steady",
+        "seconds": 3600,
+        "mass": {
+          "id_midv_noisy": 0.22,
+          "id_midv": 0.12,
+          "id_synth": 0.08,
+          "receipt_noisy": 0.18,
+          "receipt_real": 0.08,
+          "receipt": 0.12,
+          "real": 0.03,
+          "font": 0.02,
+          "bookfont": 0.05,
+          "arshasb": 0.02,
+          "persian230k": 0.02,
+          "garshasp": 0.06
+        },
+        "weights": {
+          "id_midv_noisy": 0.26,
+          "id_midv": 0.16,
+          "id_synth": 0.05,
+          "receipt_noisy": 0.22,
+          "receipt_real": 0.15,
+          "receipt": 0.08,
+          "real": 0.04,
+          "bookfont": 0.02,
+          "font": 0.02
+        },
+        "lowq": 0.25,
+        "configs": [
+          {
+            "name": "steady",
+            "lr": 5e-05,
+            "anchor": 5e-05,
+            "distill": 0.02
+          },
+          {
+            "name": "bold",
+            "lr": 0.0001,
+            "anchor": 2e-05,
+            "distill": 0.01
+          }
+        ]
+      },
+      "5": {
+        "start": "model-steady",
+        "seconds": 3600,
+        "mass": {
+          "id_midv_noisy": 0.26,
+          "id_midv": 0.15,
+          "id_synth": 0.11,
+          "receipt": 0.28,
+          "real": 0.04,
+          "font": 0.02,
+          "bookfont": 0.06,
+          "arshasb": 0.02,
+          "persian230k": 0.02,
+          "garshasp": 0.04
+        },
+        "weights": {
+          "id_midv_noisy": 0.36,
+          "id_midv": 0.2,
+          "id_synth": 0.06,
+          "receipt": 0.28,
+          "real": 0.05,
+          "bookfont": 0.03,
+          "font": 0.02
+        },
+        "lowq": 0.25,
+        "configs": [
+          {
+            "name": "steady",
+            "lr": 5e-05,
+            "anchor": 5e-05,
+            "distill": 0.02
+          },
+          {
+            "name": "bold",
+            "lr": 0.0001,
+            "anchor": 2e-05,
+            "distill": 0.02
+          }
+        ]
+      }
+    },
+    "TRAIN_SECONDS": {
+      "expression": "float(os.environ.get('TRAIN_SECONDS', 60 if DRY else RUNS[RUN].get('seconds', 3000)))"
+    },
+    "CONFIGS": {
+      "expression": "RUNS[RUN]['configs'] or CONFIGS"
+    }
+  }
+}

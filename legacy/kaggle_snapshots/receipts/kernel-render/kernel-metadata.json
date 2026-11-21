@@ -1,0 +1,18 @@
+{
+  "id": "sharifi76/indra-persian-receipts-render",
+  "title": "Indra Persian Receipts Render",
+  "code_file": "run.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_internet": true,
+  "enable_gpu": false,
+  "dataset_sources": [
+    "sharifi76/persian-ocr-large-mixed-v3",
+    "sharifi76/persian-free-fonts-ocr",
+    "sharifi76/persian-receipt-fonts-ocr"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [],
+  "model_sources": []
+}

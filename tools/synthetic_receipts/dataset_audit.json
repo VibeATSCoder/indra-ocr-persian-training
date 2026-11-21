@@ -1,0 +1,1477 @@
+{
+  "approved_images": 76,
+  "style_families": 25,
+  "bank_counts": {
+    "asanpardakht": 14,
+    "melli": 1,
+    "saman": 25,
+    "unspecified": 6,
+    "tejarat": 11,
+    "vipod": 2,
+    "mehreiran": 4,
+    "mellat": 7,
+    "refah": 1,
+    "resalat": 1,
+    "pasargad": 1,
+    "saderat": 1,
+    "keshavarzi": 1,
+    "sepah": 1
+  },
+  "families": {
+    "banner_success": {
+      "sources": [
+        1,
+        2,
+        4,
+        7,
+        8,
+        9,
+        10,
+        12,
+        50
+      ],
+      "design": "banner",
+      "theme": "light",
+      "status": "success",
+      "source_count": 9,
+      "source_ids": [
+        "t-cs01",
+        "t-cs02",
+        "t-cs04",
+        "t-cs07",
+        "t-cs08",
+        "t-cs09",
+        "t-cs10",
+        "t-cs12",
+        "t-cs50"
+      ],
+      "median_width": 1080,
+      "median_height": 1644,
+      "median_aspect_ratio": 1.5222222222222221,
+      "median_dark_fraction": 0.003515625,
+      "body_ink_height_fraction": 0.038573508005822335,
+      "dominant_rgb": [
+        [
+          252,
+          252,
+          252
+        ],
+        [
+          204,
+          228,
+          228
+        ],
+        [
+          228,
+          36,
+          60
+        ],
+        [
+          228,
+          228,
+          228
+        ],
+        [
+          204,
+          204,
+          204
+        ],
+        [
+          252,
+          60,
+          84
+        ]
+      ],
+      "source_image_hashes": [
+        "5fff91a8fceb0a66779474b22afaf6ab540949b8b62daccdcbca0a8a9bf4b04e",
+        "a8127ffec9cce5d21ae3f90336aeb90e761130641c9906896e726cb56ed4be27",
+        "d5ddfe74d4c27bbaec987db1112a88e0784145b471cb1bbd94625fccf04c8235",
+        "851a9c084115dee87c3df95216011b4c04d93d8c0b1ca7b9149afd6b8205310d",
+        "0dbfd76d4bd4a5170bfc6a4a5be214f2477ed6ebddd58a67ce66232d5dc0b9b6",
+        "05301b4420564d28d8019be798daa077e6c21e8c40677e1e2d68fe15478ab8b3",
+        "1a9d5a831036689dfde2412abcc6a6a8bfced7804fa5a95864a0bae35777914f",
+        "e574fa8c9817aeca251747921421a336325234e0ec389f6edfc732023a4176e7",
+        "bcbbb1be569838ac0639e841f91a22fe062eeb4fd1c539c610426030dfa65915"
+      ]
+    },
+    "banner_failed": {
+      "sources": [
+        5
+      ],
+      "design": "banner",
+      "theme": "light",
+      "status": "failed",
+      "source_count": 1,
+      "source_ids": [
+        "t-cs05"
+      ],
+      "median_width": 1080,
+      "median_height": 1782,
+      "median_aspect_ratio": 1.65,
+      "median_dark_fraction": 0.0026041666666666665,
+      "body_ink_height_fraction": 0.03981481481481482,
+      "dominant_rgb": [
+        [
+          252,
+          252,
+          252
+        ],
+        [
+          252,
+          228,
+          228
+        ],
+        [
+          228,
+          228,
+          228
+        ],
+        [
+          228,
+          36,
+          60
+        ],
+        [
+          204,
+          204,
+          204
+        ],
+        [
+          180,
+          180,
+          180
+        ]
+      ],
+      "source_image_hashes": [
+        "ed90d8068a83f4420969a26d9ba44cdad59639eaa768e2b4e25d966821a949e4"
+      ]
+    },
+    "banner_pending": {
+      "sources": [
+        11
+      ],
+      "design": "banner",
+      "theme": "light",
+      "status": "pending",
+      "source_count": 1,
+      "source_ids": [
+        "t-cs11"
+      ],
+      "median_width": 1080,
+      "median_height": 1733,
+      "median_aspect_ratio": 1.6046296296296296,
+      "median_dark_fraction": 0.0024739583333333332,
+      "body_ink_height_fraction": 0.03888888888888889,
+      "dominant_rgb": [
+        [
+          252,
+          252,
+          252
+        ],
+        [
+          252,
+          228,
+          204
+        ],
+        [
+          228,
+          228,
+          228
+        ],
+        [
+          228,
+          36,
+          60
+        ],
+        [
+          204,
+          204,
+          204
+        ],
+        [
+          180,
+          180,
+          180
+        ]
+      ],
+      "source_image_hashes": [
+        "a7818131c1e7f77927bf05c7be4a0b8169736bc70f9192370d9665a813ca8183"
+      ]
+    },
+    "orange_portal": {
+      "sources": [
+        15
+      ],
+      "design": "portal",
+      "theme": "orange",
+      "status": "success",
+      "source_count": 1,
+      "source_ids": [
+        "t-cs15"
+      ],
+      "median_width": 1080,
+      "median_height": 2400,
+      "median_aspect_ratio": 2.2222222222222223,
+      "median_dark_fraction": 0.42727864583333336,
+      "body_ink_height_fraction": 0.03888888888888889,
+      "dominant_rgb": [
+        [
+          12,
+          12,
+          12
+        ],
+        [
+          252,
+          252,
+          252
+        ],
+        [
+          252,
+          132,
+          12
+        ],
+        [
+          228,
+          132,
+          12
+        ],
+        [
+          228,
+          228,
+          228
+        ],
+        [
+          156,
+          156,
+          156
+        ]
+      ],
+      "source_image_hashes": [
+        "ce4e2954b38a350e4eec75342975b9b6dc1f0946af553f366c880acc43ef62e7"
+      ]
+    },
+    "avatar_dark": {
+      "sources": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        34,
+        35,
+        36,
+        38
+      ],
+      "design": "avatar",
+      "theme": "dark",
+      "status": "success",
+      "source_count": 10,
+      "source_ids": [
+        "t-cs16",
+        "t-cs17",
+        "t-cs18",
+        "t-cs19",
+        "t-cs20",
+        "t-cs21",
+        "t-cs34",
+        "t-cs35",
+        "t-cs36",
+        "t-cs38"
+      ],
+      "median_width": 591,
+      "median_height": 1280,
+      "median_aspect_ratio": 2.0678513731825525,
+      "median_dark_fraction": 0.9521158854166667,
+      "body_ink_height_fraction": 0.045880452342487894,
+      "dominant_rgb": [
+        [
+          36,
+          36,
+          36
+        ],
+        [
+          36,
+          36,
+          60
+        ],
+        [
+          12,
+          12,
+          12
+        ],
+        [
+          36,
+          60,
+          60
+        ],
+        [
+          60,
+          60,
+          60
+        ],
+        [
+          60,
+          60,
+          84
+        ]
+      ],
+      "source_image_hashes": [
+        "5bb992a90ca962a91745d366b9eb63e1c3f1682eb47a4a56fa4ccc21d5d667dd",
+        "e323119b63e97957dbd7e14bcce83bd73bf1dbef07d304372ce46b873b115284",
+        "491d8afa3de343ddeaa82e3efb5b7c4b2e6d389de32fe933220bf5f64c9e3dfe",
+        "2747d562a51daf0203444f29117ae193ed21488619eb357819c92053e2d0c1bd",
+        "bad655d34f7570ed2bcec9e8055dd0812c6974b8c2a8c6d77dd4a1d8ee80bf24",
+        "ffb6592760480e4a1bc04bb38dc69cf4fdb66a7bb6ef03e559e7d7277653a430",
+        "7e5a77815f295858808f7a3c953ac6b7e500fd64b825b367472ca8efef36f39d",
+        "aa869d02f1b84332137c6fb1c07e2c83ab2b568c1a88bf6bebeadee4d6d03b5b",
+        "69e1e5ed479e571d82647e1bde2b05c49fd01c9292807e383fb33775b281395e",
+        "0a395d412d5870aff13a2e3445e0ee97b1532020afd5a218384a939005138283"
+      ]
+    },
+    "avatar_light": {
+      "sources": [
+        39,
+        40,
+        41,
+        42,
+        43,
+        45,
+        46,
+        47,
+        52,
+        53,
+        57
+      ],
+      "design": "avatar",
+      "theme": "light",
+      "status": "success",
+      "source_count": 11,
+      "source_ids": [
+        "t-cs39",
+        "t-cs40",
+        "t-cs41",
+        "t-cs42",
+        "t-cs43",
+        "t-cs45",
+        "t-cs46",
+        "t-cs47",
+        "t-cs52",
+        "t-cs53",
+        "t-cs57"
+      ],
+      "median_width": 540,
+      "median_height": 1146,
+      "median_aspect_ratio": 2.1222222222222222,
+      "median_dark_fraction": 0.0,
+      "body_ink_height_fraction": 0.039839034205231355,
+      "dominant_rgb": [
+        [
+          252,
+          252,
+          252
+        ],
+        [
+          60,
+          60,
+          60
+        ],
+        [
+          228,
+          228,
+          228
+        ],
+        [
+          204,
+          204,
+          204
+        ],
+        [
+          228,
+          252,
+          252
+        ],
+        [
+          108,
+          108,
+          108
+        ]
+      ],
+      "source_image_hashes": [
+        "f895133f1aff93b88eb45bf5dda681400ce942a777c6e8aca4e388318a0a0638",
+        "90b780badb82e30090b67aa18afb587925d85a204c34a5116cc1185cd3090747",
+        "db43996d0633b4d41f26300ba57279d4b68c7dd6b21682d527115cb592ffec50",
+        "657a0e8b80618a239402bce3a018ad3b6e17656cf16f5d9d2a76492b3a69beda",
+        "999f6ca826ecc54d943f99abef56dcf08857d912a7ac6ae0fddd2cf1cd7d8341",
+        "fcf05e0275a8949e4ce89313e313fba235ea90d13cc816e4c5fd9a60a1aedef8",
+        "d46350cae2462c7e2d2488ceff11ea44929bb9ad092214b2aa1b7970aa4fafa7",
+        "1af757c343e35957da0b5b8775718d66475219808eec833777c25cf39099a15a",
+        "0146cb6d9caf5f72517930df0e6fef68a5fc661a837a917071be16d5114cc99b",
+        "7680b4162f4922a37f737b11457f29b21a82472450c108d023f00de55af95d65",
+        "80a523351348cca78d49db3f7f09e22427ba5c20de6f4c495d36e2748d7c96cb"
+      ]
+    },
+    "ticket_dark": {
+      "sources": [
+        22,
+        26,
+        27,
+        76
+      ],
+      "design": "ticket",
+      "theme": "dark",
+      "status": "success",
+      "source_count": 4,
+      "source_ids": [
+        "t-cs22",
+        "t-cs26",
+        "t-cs27",
+        "t-cs76"
+      ],
+      "median_width": 812,
+      "median_height": 1280,
+      "median_aspect_ratio": 1.7611510622297424,
+      "median_dark_fraction": 0.93115234375,
+      "body_ink_height_fraction": 0.04187620889748551,
+      "dominant_rgb": [
+        [
+          36,
+          36,
+          36
+        ],
+        [
+          36,
+          108,
+          84
+        ],
+        [
+          12,
+          12,
+          12
+        ],
+        [
+          36,
+          60,
+          60
+        ],
+        [
+          36,
+          36,
+          60
+        ],
+        [
+          60,
+          60,
+          60
+        ]
+      ],
+      "source_image_hashes": [
+        "1bcbf371d86bf6f968c659711b8db9fa5b7e877895a81d22420c47ac109a1521",
+        "a1c2884ca7ee1446403b155f4e7ce7f3c5521b3cfad2e930910d5ff0bab2354e",
+        "094cd562afb8a7d1d92755980ee35e4507606cb7f26ac428ebfec0e8a0500289",
+        "70e95879207ac9ed4f6e86b7bb8a0a4edcf319275268bc620f7a8c0a07a2b7a1"
+      ]
+    },
+    "ticket_pending": {
+      "sources": [
+        25
+      ],
+      "design": "ticket",
+      "theme": "dark",
+      "status": "pending",
+      "source_count": 1,
+      "source_ids": [
+        "t-cs25"
+      ],
+      "median_width": 783,
+      "median_height": 1280,
+      "median_aspect_ratio": 1.6347381864623245,
+      "median_dark_fraction": 0.8972005208333333,
+      "body_ink_height_fraction": 0.039974457215836465,
+      "dominant_rgb": [
+        [
+          36,
+          36,
+          36
+        ],
+        [
+          60,
+          60,
+          60
+        ],
+        [
+          84,
+          84,
+          84
+        ],
+        [
+          108,
+          108,
+          108
+        ],
+        [
+          84,
+          60,
+          36
+        ],
+        [
+          108,
+          132,
+          132
+        ]
+      ],
+      "source_image_hashes": [
+        "6e3c99cccb61d27f4047e7b0ea4f6ebd56a25893f43572950e04a9d460a96f0f"
+      ]
+    },
+    "ticket_failed": {
+      "sources": [
+        28
+      ],
+      "design": "ticket",
+      "theme": "dark",
+      "status": "failed",
+      "source_count": 1,
+      "source_ids": [
+        "t-cs28"
+      ],
+      "median_width": 591,
+      "median_height": 1280,
+      "median_aspect_ratio": 2.1658206429780034,
+      "median_dark_fraction": 0.8363932291666667,
+      "body_ink_height_fraction": 0.041285956006768154,
+      "dominant_rgb": [
+        [
+          36,
+          36,
+          36
+        ],
+        [
+          252,
+          60,
+          60
+        ],
+        [
+          12,
+          12,
+          12
+        ],
+        [
+          36,
+          84,
+          132
+        ],
+        [
+          36,
+          36,
+          60
+        ],
+        [
+          108,
+          180,
+          252
+        ]
+      ],
+      "source_image_hashes": [
+        "6e64a84bca7459fcc71b96a52309a623f23ab8a9a974ea2a8657649b6071a692"
+      ]
+    },
+    "ticket_light": {
+      "sources": [
+        48,
+        63,
+        77,
+        78,
+        79
+      ],
+      "design": "ticket",
+      "theme": "light",
+      "status": "success",
+      "source_count": 5,
+      "source_ids": [
+        "t-cs48",
+        "t-cs63",
+        "t-cs77",
+        "t-cs78",
+        "t-cs79"
+      ],
+      "median_width": 850,
+      "median_height": 1280,
+      "median_aspect_ratio": 1.8296296296296297,
+      "median_dark_fraction": 0.012434895833333333,
+      "body_ink_height_fraction": 0.04084112643313788,
+      "dominant_rgb": [
+        [
+          252,
+          252,
+          252
+        ],
+        [
+          36,
+          132,
+          84
+        ],
+        [
+          228,
+          228,
+          228
+        ],
+        [
+          204,
+          204,
+          204
+        ],
+        [
+          180,
+          204,
+          204
+        ],
+        [
+          36,
+          60,
+          84
+        ]
+      ],
+      "source_image_hashes": [
+        "09583c4c77b6806360328b96bde9914c5ae1fc9523c213a6be0a3f01c1131bfc",
+        "c6e8eb86b32f89f671e36445029cd75eb4dc2b6f28cbe2a4135096bb73544649",
+        "e8a3eceb02ed24ce9f46bc6930250de391a5aa2d9f606eab3525b220492e363f",
+        "e43e6230c6993326579d7ea1e474143bda40a6b59d5a6081aaf1557c4b08a58e",
+        "e5a46bbd123853c47a356104cbec81344a8b8af4f72636c2ff1b6fb6beef2e5d"
+      ]
+    },
+    "mint_summary": {
+      "sources": [
+        23,
+        24
+      ],
+      "design": "summary",
+      "theme": "light",
+      "status": "success",
+      "source_count": 2,
+      "source_ids": [
+        "t-cs23",
+        "t-cs24"
+      ],
+      "median_width": 591,
+      "median_height": 1280,
+      "median_aspect_ratio": 2.1658206429780034,
+      "median_dark_fraction": 3.255208333333333e-05,
+      "body_ink_height_fraction": 0.037901861252115115,
+      "dominant_rgb": [
+        [
+          252,
+          252,
+          252
+        ],
+        [
+          228,
+          228,
+          228
+        ],
+        [
+          228,
+          252,
+          252
+        ],
+        [
+          204,
+          204,
+          204
+        ],
+        [
+          180,
+          180,
+          180
+        ],
+        [
+          156,
+          156,
+          156
+        ]
+      ],
+      "source_image_hashes": [
+        "bd2176a7a8fd5bedcf1cc495f012ca1b2a83845b6dde8526ef00406e4fc6b763",
+        "be3914f89a70d455c66a47998450ca601901df847b24cdf311e919d42e053028"
+      ]
+    },
+    "lime_light": {
+      "sources": [
+        29,
+        81
+      ],
+      "design": "lime",
+      "theme": "light",
+      "status": "success",
+      "source_count": 2,
+      "source_ids": [
+        "t-cs29",
+        "t-cs81"
+      ],
+      "median_width": 931,
+      "median_height": 1374,
+      "median_aspect_ratio": 1.4744292480442764,
+      "median_dark_fraction": 3.255208333333333e-05,
+      "body_ink_height_fraction": 0.046567505720823854,
+      "dominant_rgb": [
+        [
+          252,
+          252,
+          252
+        ],
+        [
+          228,
+          228,
+          228
+        ],
+        [
+          228,
+          252,
+          228
+        ],
+        [
+          204,
+          204,
+          204
+        ],
+        [
+          180,
+          180,
+          180
+        ],
+        [
+          156,
+          156,
+          156
+        ]
+      ],
+      "source_image_hashes": [
+        "12840c7f3180bd3d91270546c19719348730620190c248a1d9770b83ee985217",
+        "84e841e3e0115f4e9248c0bed50445c0a997b235dba7c3b4244ff009d950a383"
+      ]
+    },
+    "lime_dark": {
+      "sources": [
+        30,
+        82
+      ],
+      "design": "lime",
+      "theme": "dark",
+      "status": "success",
+      "source_count": 2,
+      "source_ids": [
+        "t-cs30",
+        "t-cs82"
+      ],
+      "median_width": 909,
+      "median_height": 1429,
+      "median_aspect_ratio": 1.575540275049116,
+      "median_dark_fraction": 0.9081380208333334,
+      "body_ink_height_fraction": 0.04700000000000003,
+      "dominant_rgb": [
+        [
+          36,
+          36,
+          36
+        ],
+        [
+          12,
+          12,
+          12
+        ],
+        [
+          252,
+          252,
+          252
+        ],
+        [
+          60,
+          60,
+          60
+        ],
+        [
+          36,
+          60,
+          36
+        ],
+        [
+          84,
+          84,
+          84
+        ]
+      ],
+      "source_image_hashes": [
+        "b631154c61ed553447fa8f03b785a44292fb8354e490f05cf77483dc5b94de5a",
+        "7c400fe9a8e6f57832d4f880ebe06595a199252a9593d73db9d6938e07576f4f"
+      ]
+    },
+    "legacy_table": {
+      "sources": [
+        32,
+        33,
+        49,
+        59,
+        61,
+        62,
+        68
+      ],
+      "design": "legacy",
+      "theme": "light",
+      "status": "success",
+      "source_count": 7,
+      "source_ids": [
+        "t-cs32",
+        "t-cs33",
+        "t-cs49",
+        "t-cs59",
+        "t-cs61",
+        "t-cs62",
+        "t-cs68"
+      ],
+      "median_width": 596,
+      "median_height": 1280,
+      "median_aspect_ratio": 2.1476510067114094,
+      "median_dark_fraction": 0.027604166666666666,
+      "body_ink_height_fraction": 0.0463760398665755,
+      "dominant_rgb": [
+        [
+          252,
+          252,
+          252
+        ],
+        [
+          84,
+          84,
+          84
+        ],
+        [
+          228,
+          228,
+          228
+        ],
+        [
+          204,
+          204,
+          204
+        ],
+        [
+          180,
+          180,
+          180
+        ],
+        [
+          60,
+          60,
+          60
+        ]
+      ],
+      "source_image_hashes": [
+        "bcf00b8e7dea50e558b8982f52bc5b9e129fd50eebd60aa86b52217ceebc4bd4",
+        "f7c9c25a5f04b96be71815290d461290e3db3bc316a26e6b5d1c08d15a5e9d27",
+        "02d950f643b9b07a03eac65bef17227c1d5605ca395a822e9807440a45f0275d",
+        "beda6f1ea352dc4d660ec3ae6cb94101875468ad25f101ed7094b836e563cef4",
+        "2ce1fcb60dcf81a98425e405c90d40745d92a53a5b3486b479b6f9274aa11720",
+        "706c333eb6e4037ff9af51193ae51269d1a98bfc853d8544963a8299c3aa4b44",
+        "3a108905564429a192465c3512947d8307362ed5580d6403c97ba68d8df39b02"
+      ]
+    },
+    "dark_advert": {
+      "sources": [
+        44,
+        54,
+        66
+      ],
+      "design": "dark_ad",
+      "theme": "dark",
+      "status": "success",
+      "source_count": 3,
+      "source_ids": [
+        "t-cs44",
+        "t-cs54",
+        "t-cs66"
+      ],
+      "median_width": 656,
+      "median_height": 1021,
+      "median_aspect_ratio": 1.5564024390243902,
+      "median_dark_fraction": 0.8875,
+      "body_ink_height_fraction": 0.044325880758807557,
+      "dominant_rgb": [
+        [
+          60,
+          60,
+          60
+        ],
+        [
+          36,
+          36,
+          36
+        ],
+        [
+          12,
+          12,
+          12
+        ],
+        [
+          60,
+          84,
+          60
+        ],
+        [
+          84,
+          84,
+          84
+        ],
+        [
+          60,
+          84,
+          84
+        ]
+      ],
+      "source_image_hashes": [
+        "e174e953cb6e2420a14f430fafa05debc4f1de9f4c4844101e7f38a9d24e5d32",
+        "f359c4ec9bbed935854532328e10da86aecb911b4583ee8b4d9253ee07c6c705",
+        "2d7e2e1ae2be6be2008a02eb8a14b438cc9e8f034c0fa699bb131b71a1bc95eb"
+      ]
+    },
+    "thermal_stub": {
+      "sources": [
+        51
+      ],
+      "design": "thermal",
+      "theme": "paper",
+      "status": "success",
+      "source_count": 1,
+      "source_ids": [
+        "t-cs51"
+      ],
+      "median_width": 540,
+      "median_height": 1320,
+      "median_aspect_ratio": 2.4444444444444446,
+      "median_dark_fraction": 0.0,
+      "body_ink_height_fraction": 0.03759259259259272,
+      "dominant_rgb": [
+        [
+          252,
+          252,
+          252
+        ],
+        [
+          228,
+          228,
+          228
+        ],
+        [
+          204,
+          204,
+          204
+        ],
+        [
+          180,
+          180,
+          180
+        ],
+        [
+          204,
+          228,
+          228
+        ],
+        [
+          204,
+          228,
+          204
+        ]
+      ],
+      "source_image_hashes": [
+        "838b40f0a986fff3c13ece11ab2d2dbd3566c896e88375fc8a2893a959f3431a"
+      ]
+    },
+    "blue_share": {
+      "sources": [
+        55
+      ],
+      "design": "blue_share",
+      "theme": "light",
+      "status": "success",
+      "source_count": 1,
+      "source_ids": [
+        "t-cs55"
+      ],
+      "median_width": 576,
+      "median_height": 1280,
+      "median_aspect_ratio": 2.2222222222222223,
+      "median_dark_fraction": 6.510416666666667e-05,
+      "body_ink_height_fraction": 0.04357638888888883,
+      "dominant_rgb": [
+        [
+          252,
+          252,
+          252
+        ],
+        [
+          228,
+          228,
+          252
+        ],
+        [
+          12,
+          132,
+          252
+        ],
+        [
+          228,
+          228,
+          228
+        ],
+        [
+          204,
+          204,
+          204
+        ],
+        [
+          228,
+          252,
+          252
+        ]
+      ],
+      "source_image_hashes": [
+        "89f066e5f3ec72f132f324ab15d231c4ffdad71632f2c81404c8d3161765e3f4"
+      ]
+    },
+    "dual_card_dark": {
+      "sources": [
+        56
+      ],
+      "design": "dual_card",
+      "theme": "dark",
+      "status": "success",
+      "source_count": 1,
+      "source_ids": [
+        "t-cs56"
+      ],
+      "median_width": 715,
+      "median_height": 1124,
+      "median_aspect_ratio": 1.572027972027972,
+      "median_dark_fraction": 0.9051432291666667,
+      "body_ink_height_fraction": 0.03811188811188811,
+      "dominant_rgb": [
+        [
+          84,
+          84,
+          84
+        ],
+        [
+          36,
+          36,
+          36
+        ],
+        [
+          12,
+          60,
+          12
+        ],
+        [
+          12,
+          84,
+          12
+        ],
+        [
+          12,
+          36,
+          12
+        ],
+        [
+          252,
+          252,
+          252
+        ]
+      ],
+      "source_image_hashes": [
+        "fb5f478a401a8b4f1b289fd2616c258365afceb0c6b9f31e6adf670212648805"
+      ]
+    },
+    "rule_watermark": {
+      "sources": [
+        58,
+        60
+      ],
+      "design": "rules",
+      "theme": "light",
+      "status": "success",
+      "source_count": 2,
+      "source_ids": [
+        "t-cs58",
+        "t-cs60"
+      ],
+      "median_width": 520,
+      "median_height": 1016,
+      "median_aspect_ratio": 1.953137272336579,
+      "median_dark_fraction": 0.0007161458333333334,
+      "body_ink_height_fraction": 0.0431734317343173,
+      "dominant_rgb": [
+        [
+          252,
+          252,
+          252
+        ],
+        [
+          228,
+          228,
+          228
+        ],
+        [
+          228,
+          252,
+          252
+        ],
+        [
+          204,
+          204,
+          204
+        ],
+        [
+          180,
+          180,
+          180
+        ],
+        [
+          204,
+          228,
+          228
+        ]
+      ],
+      "source_image_hashes": [
+        "02600436cafdad2e81e65379156378ef19afa3568bf91b8109a2578a487f14e7",
+        "bef703d4c7c0904a7c9fd3c2e6390a5e6ca6c95b36d31e439755a0c574be5b52"
+      ]
+    },
+    "stacked_large": {
+      "sources": [
+        65
+      ],
+      "design": "stacked",
+      "theme": "light",
+      "status": "success",
+      "source_count": 1,
+      "source_ids": [
+        "t-cs65"
+      ],
+      "median_width": 546,
+      "median_height": 1080,
+      "median_aspect_ratio": 1.978021978021978,
+      "median_dark_fraction": 0.010091145833333334,
+      "body_ink_height_fraction": 0.06025641025641032,
+      "dominant_rgb": [
+        [
+          252,
+          252,
+          252
+        ],
+        [
+          228,
+          228,
+          228
+        ],
+        [
+          204,
+          204,
+          204
+        ],
+        [
+          180,
+          180,
+          180
+        ],
+        [
+          156,
+          156,
+          156
+        ],
+        [
+          36,
+          12,
+          108
+        ]
+      ],
+      "source_image_hashes": [
+        "926c8918e6bf595d622c699222b5c99b1abb8fdfd147601b895cd4454965c06e"
+      ]
+    },
+    "green_toolbar": {
+      "sources": [
+        67
+      ],
+      "design": "toolbar",
+      "theme": "light",
+      "status": "success",
+      "source_count": 1,
+      "source_ids": [
+        "t-cs67"
+      ],
+      "median_width": 484,
+      "median_height": 1080,
+      "median_aspect_ratio": 2.231404958677686,
+      "median_dark_fraction": 0.0013020833333333333,
+      "body_ink_height_fraction": 0.04442148760330578,
+      "dominant_rgb": [
+        [
+          252,
+          252,
+          252
+        ],
+        [
+          60,
+          132,
+          60
+        ],
+        [
+          228,
+          228,
+          228
+        ],
+        [
+          204,
+          204,
+          204
+        ],
+        [
+          180,
+          180,
+          180
+        ],
+        [
+          60,
+          132,
+          84
+        ]
+      ],
+      "source_image_hashes": [
+        "6ce7b9bfa2f59eed478cfc95fedb1ad83c7a82a566ac7e866f469811566429ba"
+      ]
+    },
+    "recipient_light": {
+      "sources": [
+        69,
+        70,
+        71,
+        72,
+        73
+      ],
+      "design": "recipient",
+      "theme": "light",
+      "status": "success",
+      "source_count": 5,
+      "source_ids": [
+        "t-cs69",
+        "t-cs70",
+        "t-cs71",
+        "t-cs72",
+        "t-cs73"
+      ],
+      "median_width": 563,
+      "median_height": 1098,
+      "median_aspect_ratio": 1.9502664298401422,
+      "median_dark_fraction": 0.0,
+      "body_ink_height_fraction": 0.04351851851851862,
+      "dominant_rgb": [
+        [
+          252,
+          252,
+          252
+        ],
+        [
+          228,
+          228,
+          228
+        ],
+        [
+          204,
+          204,
+          204
+        ],
+        [
+          180,
+          180,
+          180
+        ],
+        [
+          204,
+          228,
+          228
+        ],
+        [
+          156,
+          156,
+          156
+        ]
+      ],
+      "source_image_hashes": [
+        "cd755ed56b69f984d9c40c90fe0999e1b160146211ce133b652c737d2b6a1323",
+        "1372549dfdd7a8ae339dfd4246bfab3de0d5283b196a45efd16b5ffd58acc3a8",
+        "89d030d9dcf5e9a5be079b139d90b0be7eae986e1c96c6e1b8770bc438d2f2e5",
+        "65ce8e3cd4f3c340ecc5a0c3ba8fa7e9e67ad795d99913e2480398a71b23dce1",
+        "a7e8ac746029a0d392ac4e128f30d3d658fa8dc84b97451ab07eb0eaab48dcd7"
+      ]
+    },
+    "recipient_dark": {
+      "sources": [
+        74,
+        75
+      ],
+      "design": "recipient",
+      "theme": "dark",
+      "status": "success",
+      "source_count": 2,
+      "source_ids": [
+        "t-cs74",
+        "t-cs75"
+      ],
+      "median_width": 563,
+      "median_height": 1093,
+      "median_aspect_ratio": 1.941385435168739,
+      "median_dark_fraction": 0.9459635416666667,
+      "body_ink_height_fraction": 0.04875666074600363,
+      "dominant_rgb": [
+        [
+          36,
+          36,
+          60
+        ],
+        [
+          12,
+          36,
+          36
+        ],
+        [
+          12,
+          36,
+          60
+        ],
+        [
+          36,
+          60,
+          60
+        ],
+        [
+          60,
+          84,
+          84
+        ],
+        [
+          60,
+          60,
+          84
+        ]
+      ],
+      "source_image_hashes": [
+        "f7238c039a979cd51203ee17fc3e403dffeeaffaf1b5c7c36dc039c930ff261c",
+        "3cd73a055a440ac9f39980b00b99b28a5a664bc38b64ed1d2ce81670ec18bfed"
+      ]
+    },
+    "minimal_card": {
+      "sources": [
+        64
+      ],
+      "design": "minimal",
+      "theme": "light",
+      "status": "success",
+      "source_count": 1,
+      "source_ids": [
+        "t-cs64"
+      ],
+      "median_width": 1125,
+      "median_height": 1266,
+      "median_aspect_ratio": 1.1253333333333333,
+      "median_dark_fraction": 0.0006510416666666666,
+      "body_ink_height_fraction": 0.036444444444444446,
+      "dominant_rgb": [
+        [
+          252,
+          252,
+          252
+        ],
+        [
+          228,
+          228,
+          228
+        ],
+        [
+          204,
+          204,
+          204
+        ],
+        [
+          180,
+          180,
+          180
+        ],
+        [
+          132,
+          132,
+          132
+        ],
+        [
+          156,
+          156,
+          156
+        ]
+      ],
+      "source_image_hashes": [
+        "3816814d44b2c07dae805ea9b0f1b8d0f5a6774fe36cbf482a6837cd79d9bf39"
+      ]
+    },
+    "transfer_detail": {
+      "sources": [
+        80
+      ],
+      "design": "detail",
+      "theme": "light",
+      "status": "success",
+      "source_count": 1,
+      "source_ids": [
+        "t-cs80"
+      ],
+      "median_width": 540,
+      "median_height": 1170,
+      "median_aspect_ratio": 2.1666666666666665,
+      "median_dark_fraction": 6.510416666666667e-05,
+      "body_ink_height_fraction": 0.042685185185185104,
+      "dominant_rgb": [
+        [
+          252,
+          252,
+          252
+        ],
+        [
+          228,
+          228,
+          228
+        ],
+        [
+          204,
+          204,
+          204
+        ],
+        [
+          180,
+          180,
+          180
+        ],
+        [
+          156,
+          156,
+          156
+        ],
+        [
+          132,
+          132,
+          132
+        ]
+      ],
+      "source_image_hashes": [
+        "0c565c0a8cb796dc865afce0dfc743b3f4c842881d54ccecd06383c590d3cf87"
+      ]
+    }
+  },
+  "derivation": "Manual visual grouping plus measured aspect ratios, ink heights and color distributions. Vector recipes recreate the styles; source rasters and customer text are not embedded.",
+  "sealed_evaluation_used": false
+}

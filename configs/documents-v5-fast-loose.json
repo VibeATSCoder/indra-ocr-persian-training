@@ -1,0 +1,18 @@
+{
+  "base_model_dir": "../models/base",
+  "dataset_dir": "../data/prepared",
+  "output_dir": "../runs/documents-new-data",
+  "seed": 20261104,
+  "batch_size": 192,
+  "device": "cuda:0",
+  "train_seconds": 4500,
+  "eval_every_seconds": 1100,
+  "samples_per_epoch": 2000000,
+  "num_workers": 2,
+  "allow_vocab_extension": true,
+  "domain_sampling_mass": {},
+  "validation_weights": {},
+  "candidates": [
+    {"name": "fast-loose", "learning_rate": 0.00008, "anchor_weight": 0.0002, "distillation_weight": 0.05}
+  ]
+}

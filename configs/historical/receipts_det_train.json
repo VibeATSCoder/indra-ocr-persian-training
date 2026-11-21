@@ -1,0 +1,42 @@
+{
+  "source_file": "receipts/det/train.py",
+  "parameters": {
+    "SEED": 20261120,
+    "BATCH": {
+      "expression": "2 if DRY else 8"
+    },
+    "TRAIN_SECONDS": {
+      "expression": "float(os.environ.get('TRAIN_SECONDS', 40 if DRY else 2400))"
+    },
+    "EVAL_EVERY": {
+      "expression": "20 if DRY else 400"
+    },
+    "MODEL_REV": "bd02167fdf2005a19962cc15188f8496a2c87d3b",
+    "CONFIGS": [
+      {
+        "name": "steady",
+        "lr": 0.0001,
+        "anchor": 1e-05,
+        "pos": 1.0
+      },
+      {
+        "name": "recall",
+        "lr": 0.0001,
+        "anchor": 1e-05,
+        "pos": 2.0
+      },
+      {
+        "name": "bold",
+        "lr": 0.0003,
+        "anchor": 0.0,
+        "pos": 1.0
+      },
+      {
+        "name": "gentle",
+        "lr": 3e-05,
+        "anchor": 1e-05,
+        "pos": 1.0
+      }
+    ]
+  }
+}

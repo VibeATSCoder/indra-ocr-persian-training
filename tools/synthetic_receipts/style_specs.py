@@ -1,0 +1,90 @@
+"""Manually reviewed receipt families covering the 76 approved source images."""
+
+FAMILIES = {
+    "banner_success": {
+        "sources": [1, 2, 4, 7, 8, 9, 10, 12, 50],
+        "design": "banner",
+        "theme": "light",
+        "status": "success",
+    },
+    "banner_failed": {"sources": [5], "design": "banner", "theme": "light", "status": "failed"},
+    "banner_pending": {"sources": [11], "design": "banner", "theme": "light", "status": "pending"},
+    "orange_portal": {"sources": [15], "design": "portal", "theme": "orange", "status": "success"},
+    "avatar_dark": {
+        "sources": [16, 17, 18, 19, 20, 21, 34, 35, 36, 38],
+        "design": "avatar",
+        "theme": "dark",
+        "status": "success",
+    },
+    "avatar_light": {
+        "sources": [39, 40, 41, 42, 43, 45, 46, 47, 52, 53, 57],
+        "design": "avatar",
+        "theme": "light",
+        "status": "success",
+    },
+    "ticket_dark": {
+        "sources": [22, 26, 27, 76],
+        "design": "ticket",
+        "theme": "dark",
+        "status": "success",
+    },
+    "ticket_pending": {"sources": [25], "design": "ticket", "theme": "dark", "status": "pending"},
+    "ticket_failed": {"sources": [28], "design": "ticket", "theme": "dark", "status": "failed"},
+    "ticket_light": {
+        "sources": [48, 63, 77, 78, 79],
+        "design": "ticket",
+        "theme": "light",
+        "status": "success",
+    },
+    "mint_summary": {
+        "sources": [23, 24],
+        "design": "summary",
+        "theme": "light",
+        "status": "success",
+    },
+    "lime_light": {"sources": [29, 81], "design": "lime", "theme": "light", "status": "success"},
+    "lime_dark": {"sources": [30, 82], "design": "lime", "theme": "dark", "status": "success"},
+    "legacy_table": {
+        "sources": [32, 33, 49, 59, 61, 62, 68],
+        "design": "legacy",
+        "theme": "light",
+        "status": "success",
+    },
+    "dark_advert": {
+        "sources": [44, 54, 66],
+        "design": "dark_ad",
+        "theme": "dark",
+        "status": "success",
+    },
+    "thermal_stub": {"sources": [51], "design": "thermal", "theme": "paper", "status": "success"},
+    "blue_share": {"sources": [55], "design": "blue_share", "theme": "light", "status": "success"},
+    "dual_card_dark": {
+        "sources": [56],
+        "design": "dual_card",
+        "theme": "dark",
+        "status": "success",
+    },
+    "rule_watermark": {
+        "sources": [58, 60],
+        "design": "rules",
+        "theme": "light",
+        "status": "success",
+    },
+    "stacked_large": {"sources": [65], "design": "stacked", "theme": "light", "status": "success"},
+    "green_toolbar": {"sources": [67], "design": "toolbar", "theme": "light", "status": "success"},
+    "recipient_light": {
+        "sources": [69, 70, 71, 72, 73],
+        "design": "recipient",
+        "theme": "light",
+        "status": "success",
+    },
+    "recipient_dark": {
+        "sources": [74, 75],
+        "design": "recipient",
+        "theme": "dark",
+        "status": "success",
+    },
+    "minimal_card": {"sources": [64], "design": "minimal", "theme": "light", "status": "success"},
+    "transfer_detail": {"sources": [80], "design": "detail", "theme": "light", "status": "success"},
+}
+STATUS = {"success": "تراکنش موفق", "failed": "تراکنش ناموفق", "pending": "در انتظار انجام"}

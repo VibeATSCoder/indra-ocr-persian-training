@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "indra-persian-training"
+version = "0.1.0"
+description = "Reusable Persian Indra OCR fine-tuning with recovered experiment provenance"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.26,<3",
+  "Pillow>=10",
+  "opencv-python-headless>=4.10",
+]
+
+[project.optional-dependencies]
+train = ["torch>=2.5,<3", "onnx>=1.16", "onnxruntime>=1.18", "rapidfuzz>=3.10"]
+datasets = ["pyarrow>=18", "huggingface_hub>=0.27", "requests>=2.32"]
+kaggle = ["kaggle==2.2.5", "six==1.17.0"]
+dev = ["ruff>=0.9"]
+
+[project.scripts]
+indra-train = "indra_training.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"indra_training._vendor" = ["LICENSE.txt"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+extend-exclude = ["legacy", "vendor", "tools/synthetic_receipts", "src/indra_training/_vendor"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]

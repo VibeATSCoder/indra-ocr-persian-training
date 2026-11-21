@@ -1,0 +1,11 @@
+# Maintained files use LF on Windows and Linux.
+* text=auto eol=lf
+# Preserve recovered source bytes and license text exactly.
+legacy/** -text -whitespace
+vendor/** -text -whitespace
+licenses/** -text -whitespace
+tools/synthetic_receipts/** -text -whitespace
+src/indra_training/_vendor/** -text -whitespace
+src/indra_training/model.py -text
+*.ttf binary
+*.otf binary

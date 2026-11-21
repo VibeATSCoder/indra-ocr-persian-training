@@ -1,0 +1,15 @@
+{
+  "source_file": "receipts/ids/train_card.py",
+  "parameters": {
+    "BATCH": {
+      "expression": "4 if DRY else 48"
+    },
+    "TRAIN_SECONDS": {
+      "expression": "float(os.environ.get('TRAIN_SECONDS', 40 if DRY else 1800))"
+    },
+    "EVAL_EVERY": {
+      "expression": "15 if DRY else 240"
+    },
+    "SEED": 20261124
+  }
+}

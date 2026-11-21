@@ -1,0 +1,22 @@
+{
+  "id": "sharifi76/indra-persian-receipts5-train",
+  "title": "Indra Persian Receipts5 Train",
+  "code_file": "run.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_internet": true,
+  "enable_gpu": true,
+  "dataset_sources": [
+    "sharifi76/persian-ocr-large-mixed-v3"
+  ],
+  "kernel_sources": [
+    "sharifi76/indra-persian-v4-render",
+    "sharifi76/indra-persian-receipts3-train",
+    "sharifi76/indra-persian-receipts2-render",
+    "sharifi76/indra-persian-ids-prepare"
+  ],
+  "competition_sources": [],
+  "model_sources": [],
+  "machine_shape": "NvidiaTeslaT4"
+}

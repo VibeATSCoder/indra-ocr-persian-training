@@ -1,0 +1,78 @@
+{
+  "source_file": "receipts/results4/kernel/results.json",
+  "recorded_results": {
+    "candidates": [
+      {
+        "name": "steady",
+        "best": 0.8470589686024744,
+        "steps": 4734,
+        "sec_per_step": 0.5083939653153782
+      },
+      {
+        "name": "recall",
+        "best": 0.8452523443792755,
+        "steps": 4726,
+        "sec_per_step": 0.5092728278032163
+      },
+      {
+        "name": "gentle",
+        "best": 0.8187574542876604,
+        "steps": 4927,
+        "sec_per_step": 0.4883819658956768
+      },
+      {
+        "name": "bold",
+        "best": 0.8793683191536682,
+        "steps": 4827,
+        "sec_per_step": 0.49853330107023003
+      }
+    ],
+    "configs": [
+      {
+        "name": "steady",
+        "lr": 0.0001,
+        "anchor": 1e-05,
+        "pos": 1.0
+      },
+      {
+        "name": "recall",
+        "lr": 0.0001,
+        "anchor": 1e-05,
+        "pos": 2.0
+      },
+      {
+        "name": "bold",
+        "lr": 0.0003,
+        "anchor": 0.0,
+        "pos": 1.0
+      },
+      {
+        "name": "gentle",
+        "lr": 3e-05,
+        "anchor": 1e-05,
+        "pos": 1.0
+      }
+    ],
+    "model_revision": "bd02167fdf2005a19962cc15188f8496a2c87d3b",
+    "export_parity_steady": {
+      "max_abs": 5.340576171875e-05
+    },
+    "export_parity_recall": {
+      "max_abs": 4.9591064453125e-05
+    },
+    "export_parity_bold": {
+      "max_abs": 5.14984130859375e-05
+    },
+    "export_parity_gentle": {
+      "max_abs": 6.103515625e-05
+    },
+    "selected": "bold",
+    "selection_scores": {
+      "bold": 0.8793683191536682,
+      "steady": 0.8470589686024744,
+      "recall": 0.8452523443792755,
+      "gentle": 0.8187574542876604,
+      "start": 0.6130042947521639
+    }
+  }
+}

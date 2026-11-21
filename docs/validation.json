@@ -1,0 +1,55 @@
+{
+  "scope": "Functional CPU smoke test on invented text; not a production accuracy benchmark",
+  "synthetic_lines": 10,
+  "prepared_counts": {
+    "train": {
+      "custom": 6
+    },
+    "validation": {
+      "custom": 2
+    },
+    "test": {
+      "custom": 2
+    }
+  },
+  "dataset_sha256": "bff20a3a2dbc7afbaf7acde1f21dd96cdfded6cfe7f76e3b52cb2e22180350a8",
+  "base_onnx_sha256": "468796bd684486a8388c30c8b4ed2a26e3eeb1f8ff02831c24c2e12c79a2a834",
+  "training_steps": 2,
+  "maximum_parameter_change": 1.52587890625e-05,
+  "selected_model": "baseline",
+  "test_used_for_selection": false,
+  "selected_export_parity": {
+    "max_logit_difference": 3.814697265625e-05,
+    "ids_identical": true,
+    "lengths_identical": true
+  },
+  "trained_candidate_export_parity": {
+    "max_logit_difference": 4.57763671875e-05,
+    "ids_identical": true,
+    "lengths_identical": true
+  },
+  "expanded_vocabulary_export_parity": {
+    "max_logit_difference": 3.814697265625e-05,
+    "ids_identical": true,
+    "lengths_identical": true
+  },
+  "post_selection_test_samples": 2,
+  "kaggle_kernel_compiled": true,
+  "kaggle_kernel_private": true,
+  "kaggle_gpu_training_rerun": false,
+  "environment": {
+    "packages": {
+      "torch": "2.15.0+cpu",
+      "numpy": "2.5.4",
+      "onnx": "1.23.2",
+      "onnxruntime": "1.31.1",
+      "Pillow": "13.0.0",
+      "opencv-python-headless": "5.0.0.93",
+      "rapidfuzz": "3.14.6"
+    },
+    "git_commit": null,
+    "cuda": null,
+    "device": "cpu",
+    "base_onnx_sha256": "468796bd684486a8388c30c8b4ed2a26e3eeb1f8ff02831c24c2e12c79a2a834"
+  }
+}

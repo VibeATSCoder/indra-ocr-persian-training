@@ -1,0 +1,16 @@
+{
+  "base_model_dir": "../models/receipts-start",
+  "dataset_dir": "../data/prepared-receipts",
+  "output_dir": "../runs/receipts-new-data",
+  "seed": 20261116,
+  "batch_size": 192,
+  "device": "cuda:0",
+  "train_seconds": 3600,
+  "eval_every_seconds": 750,
+  "samples_per_epoch": 2000000,
+  "num_workers": 2,
+  "allow_vocab_extension": true,
+  "candidates": [
+    {"name": "bold", "learning_rate": 0.0001, "anchor_weight": 0.00002, "distillation_weight": 0.01}
+  ]
+}

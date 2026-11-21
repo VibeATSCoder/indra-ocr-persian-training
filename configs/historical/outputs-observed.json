@@ -1,0 +1,19 @@
+{
+  "source_file": "outputs/results.json",
+  "recorded_results": {
+    "model_revision": "bd02167fdf2005a19962cc15188f8496a2c87d3b",
+    "code_revision": "e20355319b5aa5705a876a8d2b40aca606d7df5f",
+    "pretrained_parity": {
+      "max_logit_difference": 4.1961669921875e-05,
+      "ids_identical": true,
+      "lengths_identical": true
+    },
+    "exported_parity": {
+      "max_logit_difference": 4.57763671875e-05,
+      "ids_identical": true,
+      "lengths_identical": true
+    },
+    "selected_epoch": 7,
+    "training_seconds": 473
+  }
+}

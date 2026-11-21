@@ -1,0 +1,9 @@
+{
+  "source_file": "v3/train.py",
+  "parameters": {
+    "SEED": 20261102,
+    "BATCH": 256,
+    "EPOCHS": 3,
+    "MODEL_REV": "bd02167fdf2005a19962cc15188f8496a2c87d3b"
+  }
+}

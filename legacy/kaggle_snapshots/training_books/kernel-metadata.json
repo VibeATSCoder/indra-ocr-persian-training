@@ -1,0 +1,16 @@
+{
+  "id": "sharifi76/indra-persian-books-finetune",
+  "title": "Indra Persian Books Finetune",
+  "code_file": "run_training.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "machine_shape": "NvidiaTeslaT4",
+  "dataset_sources": [],
+  "competition_sources": [],
+  "kernel_sources": [
+    "sharifi76/persian-ocr-book-line-preparation"
+  ]
+}
